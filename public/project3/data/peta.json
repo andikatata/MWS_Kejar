@@ -1,0 +1,30 @@
+
+ { "places":[
+    {
+        "lokasi" : [-7.974268, 112.658075], 
+        "sponsor" : "Urban Pop Cafe",
+        "gambar":"images/urban-pop-cafe.jpg",
+        "review": "Tempat nongkrong yang nyaman."
+    }, {
+         "lokasi": [-7.967592, 112.639858], 
+         "sponsor": "Twenty First Coffee",
+         "gambar": "images/21 coffee.jpg",
+         "review": "Nikmatnya perpaduan kopi dan susu di sini."
+    }, {
+        "lokasi": [-7.973099, 112.666560], 
+        "sponsor" : "Warkop Ranggayo", 
+        "gambar":"images/warkop-ranggayo.jpg",
+        "review": "Nikmatnya kopi khas indonesia cuma ada di sini."
+    },{
+        "lokasi": [-7.980049, 112.630080], 
+        "sponsor" : "Nomaden Coffee",
+        "gambar":"images/nomaden coffee.jpg",
+        "review": "Tempat ngopi yang wajib dikunjungi di kota Malang."},
+    {
+        "lokasi": [-7.979449, 112.65574], 
+        "sponsor" : "Kafe Endorse", 
+        "gambar":"images/kafe endorse.jpg",
+        "review": "Minum kopi jangan lupa beli untuk orang di rumah."
+    }
+]
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <title> MWS - Andika Tata</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    html,
+    body {
+        margin: 0;
+        font-family: 'Roboto';
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        grid-template-rows: 130px 0.5fr 0.5fr 0.5fr 0.5fr 60px;
+        grid-gap: 8px;
+        background: white;
+    }
+
+    .menu {
+        background: rgb(185, 49, 49);
+        grid-column: 1/3;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .sidebar {
+        background: #E9E9E9;
+        grid-row: 2/6;
+        grid-column: 1/2;
+        padding: 25px 16px 10px 10px;
+        text-align: center;
+    }
+
+    .konten {
+        background: #fff;
+        grid-column: 2/3;
+        padding: 15px 0px 15px 35px;
+    }
+
+    .konten-1 {
+        background:  #2980b9;
+    }
+   
+    .konten-2 {
+        background: #1abc9c;
+    }
+
+    .konten-3 {
+        background: #b6b929;
+    }
+
+      .konten-4 {
+        background: #e49b3b;
+    }
+
+    .footer {
+        line-height: 60px;
+        text-align: center;
+        font-size: 15px;
+        background: rgb(185, 49, 49);
+        grid-column: 1/3;
+        font-weight: bold;
+        color: white;
+        padding: 0;
+    }
+
+    .konten h2 {
+        font-size: 40px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        text-decoration: underline;
+
+    }
+
+    .konten p {
+        font-size: 17px;
+        line-height: 40px;
+        margin: 0;
+    }
+
+    
+
+    .konten p a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .konten p a:hover {
+        text-decoration: underline;
+    }
+
+    .circle {
+        border-radius: 50%;
+        overflow: hidden;
+        padding: 3px;
+        max-width: 100%;
+        height: auto;
+        background: #fff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08), 0px 0px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-width : 320px) and (max-width : 640px) {
+        .konten {
+            padding: 15px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="https://tata-49004.firebaseapp.com/" alt="Muhammad Andika Tata">
+                <img src="images/logo.png" width="80" class="circle" id="logo" alt="Muhammad Andika Tata on Firebase">
+
+            </a>
+        </div>
+        <div class="sidebar">
+            <img src="images/foto.png" class="circle" alt="Andika Tata">
+        </div>
+        <div class="konten konten-1">
+            <p>
+                <a href="project1/add2numbers.html"><span>Project1 | <strong>Menjumlahkan dua Angka</strong></span></a>
+            </p>
+        </div>
+        <div class="konten konten-2">
+            <p>
+                <a href="project2/index.html"><span>Project2 | <strong> Lokasi Detail MapBox</strong></span></a>
+            </p>
+        </div>
+        <div class="konten konten-3">
+            <p>
+                <a href="project4/index.html"><span>Project3 | <strong> Lokasi Ngopi Istimewa </strong></span></a>
+            </p>
+        </div>
+        <div class="konten konten-4">
+            <p>
+                <a href="project3/index.html"><span>Project4 | <strong> MapBox Fetch JSON</strong></span></a>
+            </p>
+        </div>
+        <div class="footer">
+            &nbsp;&copy; 2018 - <strong>MWS Andika Tata</strong>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            console.log("Will service worker register?");
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        } else {
+            console.log("Browser not support Service Worker")
+        }
+    </script>
+</body>
+
+</html>
